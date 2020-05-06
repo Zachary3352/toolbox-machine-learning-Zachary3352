@@ -1,0 +1,4 @@
+1. The curve trends upwards as the percentage of training data goes upwards. I would expect this result since the more data the model has to train on, the more likely it is to be accurate.
+2. At least in my data, between about 0-20% of data used for training, the accuracy seems to be a bit noisy. I suspect this is because when using so little training data, it's hard to get a useful result.
+3. To get a relatively smooth curve, I used a num_trials of 500. However, 100 also gives pretty smooth data and takes a lot less time to run.
+4. As the value of C gets lower, the accuracy of the testing data becomes more unpredictable.
